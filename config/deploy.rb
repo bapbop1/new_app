@@ -4,8 +4,8 @@ lock "3.11.0"
 set :application, "spree_deploy"
 set :repo_url, "git@github.com:bapbop1/new_app.git"
 set :pty, true
-set :linked_files, %w(config/application.yml)
-set :linked_dirs, %w(log tmp/pids tmp/cache tmp/sockets  public/system public/uploads)
+set :linked_files, %w(config/database.yml config/application.yml)
+set :linked_dirs, %w(log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads)
 set :keep_releases, 5
 set :rvm_type, :user
 
